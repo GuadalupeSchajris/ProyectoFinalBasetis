@@ -3,14 +3,24 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@playwright/test": "^1.54.0"
-  }
+    "@playwright/test": "^1.54.0",
+    "@types/node": "^24.0.12",
+  "typescript": "^5.8.3"
+},
+"scripts": {
+  "test": "playwright test",
+  "test:smoke": "playwright test --grep @smoke",
+  "test:regression": "playwright test --grep @regression",
+  "test:booking": "playwright test --grep @booking",
+  "test:contact": "playwright test --grep @contact",
+  "test:rooms": "playwright test --grep @rooms",
+  "test:ui": "playwright test --grep @ui",
+  "test:validation": "playwright test --grep @validation",
+  "report": "playwright show-report"
+}
 }
