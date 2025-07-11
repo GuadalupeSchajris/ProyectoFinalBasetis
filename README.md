@@ -55,6 +55,7 @@ Playwright HTML report
 Test results
 
 🏗 Project Structure
+
 .
 ├── .github/workflows/       # CI/CD con GitHub Actions
 
