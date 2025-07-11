@@ -57,20 +57,35 @@ Test results
 🏗 Project Structure
 .
 ├── .github/workflows/       # CI/CD con GitHub Actions
+
 ├── src/
+
 │   ├── models/              # Modelos de datos de prueba
+
 │   │   ├── bookingData.ts
+
 │   │   └── contactData.ts
+
 │   └── pages/              # Page Objects
+
 │       ├── bookingPage.ts
+
 │       ├── contactPage.ts
+
 │       ├── homePage.ts
+
 │       └── roomSelectionPage.ts
+
 ├── tests/
+
 │   ├── booking.spec.ts      # Tests de reservas
+
 │   └── contact.spec.ts      # Tests de contacto
+
 ├── playwright.config.ts    # Configuración de Playwright
+
 ├── package.json
+
 └── tsconfig.json
 
 📄 License
